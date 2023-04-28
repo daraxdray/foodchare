@@ -1,124 +1,191 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import HomePageHero from "../components/Hero/HomePageHero";
+import Footer from "../components/partials/footer/Footer";
+import Title from "../components/Typography/Title";
+import Navbar from "../components/partials/header/NavBar/index";
+import FoodCard from "../components/Cards/foodCard";
+import TestimonialCard from "../components/Cards/TestimonialCard";
+import JoinUsCard from "../components/Cards/JoinUsCard";
+import SubscribeNow from "../components/Subscribe/SubscribeNow";
+import HowItWorks from "../components/Cards/HowItWorksCard";
+import howItWork1 from "/public/assets/images/how-it-work/how-it-work-food.png";
+import howItWork2 from "/public/assets/images/how-it-work/how-it-work-food-2.png";
+import howItWork3 from "/public/assets/images/how-it-work/how-it-work-food-3.png";
+import DivideY from "../components/Divider/DivideY";
+import ButtonWithIconRight from "../components/Button/ButtonWithIconRight";
+import { FaRegHandshake } from "react-icons/fa";
+import { TbTruckDelivery } from "react-icons/tb";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <>
+      {/* <Head>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charSet="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
-      </div>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+      </Head> */}
+      <Navbar />{" "}
+      <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 tracking-wide md:tracking-wide font-poppins ">
+        <HomePageHero />
+        {/* HOW IT WORKS SECTION STARTS */}
+        <DivideY>
+          <Title
+            intro="Our Strategy"
+            titleInitial="How it"
+            titleEnding="works"
+            subtitle={
+              "Know how are platform woks for a seamless order and delivery process"
+            }
+            introRequired={true}
+            subtitleRequired={true}
+            bgLineRequired={true}
+          />
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          <div className="grid grid-col-1 md:grid-cols-3 md:px-12  gap-4 md:gap-8">
+            <HowItWorks
+              headerImg={howItWork1}
+              title={"Food"}
+              description={
+                "Place an order by selecting your meal from our website"
+              }
+            />
+            <HowItWorks
+              headerImg={howItWork2}
+              title={"Groceries"}
+              description={
+                "Place an order by selecting your groceries from our website"
+              }
+            />
+            <HowItWorks
+              headerImg={howItWork3}
+              title={"Food Supply"}
+              description={"Place an order for food supply from our website"}
+            />
+          </div>
+        </DivideY>
+        {/* HOW IT WORKS SECTION ENDS */}
+        {/* Our Most  Delicious Meal Starts */}
+        <DivideY>
+          <Title
+            intro="Our Favorite Restaurants"
+            titleInitial="Our Most"
+            titleEnding="Delicious Meal"
+            subtitle={
+              "Fully nobis id expedita dolores officiis layered dolor sit amet layered dolor sit amet"
+            }
+            introRequired={true}
+            subtitleRequired={true}
+            bgLineRequired={false}
+          />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="grid grid-col-1 md:grid-cols-4 gap-4">
+            <FoodCard />
+          </div>
+          <ButtonWithIconRight text="Explore our list" />
+        </DivideY>
+        {/* Our Most  Delicious Meal Ends */}
+        {/* Groceries To Your Door Starts */}
+        <DivideY>
+          <Title
+            intro="Making shooping easier"
+            titleInitial="Groceries"
+            titleEnding="To Your Door"
+            subtitle={
+              "Fully nobis id expedita dolores officiis layered dolor sit amet layered dolor sit amet"
+            }
+            introRequired={true}
+            subtitleRequired={true}
+            bgLineRequired={false}
+          />
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+          <div className="grid grid-col-1 md:grid-cols-4 gap-4">
+            <FoodCard />
+          </div>
+          <ButtonWithIconRight text="Explore our service" />
+        </DivideY>
+        {/* Groceries To Your Door Ends */}
+        {/* Groceries To Your Door Starts */}
+        <DivideY>
+          <Title
+            intro="Our Specials Deals"
+            titleInitial="The Best"
+            titleEnding="Distribution Service"
+            subtitle={
+              "Fully nobis id expedita dolores officiis layered dolor sit amet layered dolor sit amet"
+            }
+            introRequired={true}
+            subtitleRequired={true}
+            bgLineRequired={false}
+          />
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+          <div className="grid grid-col-1 md:grid-cols-4 gap-4">
+            <FoodCard />
+          </div>
+          <ButtonWithIconRight text="Explore our service" />
+        </DivideY>
+        {/* Groceries To Your Door Ends */}
+        {/* JoinUs SECTION starts */}
+        <DivideY>
+          <Title
+            intro=""
+            titleInitial="Be A Part Of"
+            titleEnding="Ujali"
+            subtitle={
+              "Fully nobis id expedita dolores officiis layered dolor sit amet layered dolor sit amet"
+            }
+            introRequired={false}
+            subtitleRequired={true}
+            bgLineRequired={false}
+          />
+          <div className="grid grid-col-1 md:grid-cols-2 py-8 gap-8 md:gap-24 md:px-28">
+            <JoinUsCard
+              text={"Become a Partner"}
+              btnText={"See more"}
+              IconName={FaRegHandshake}
+            />
+            <JoinUsCard
+              text={"Become a Driver"}
+              btnText={"Join us"}
+              IconName={TbTruckDelivery}
+            />
+          </div>
+        </DivideY>
+        {/* JoinUs SECTION ends*/}
+        {/* TESTIMONIAL SECTION starts */}
+        <DivideY>
+          <Title
+            intro=""
+            titleInitial="Reviews"
+            titleEnding="from our customers"
+            subtitle={
+              "Fully nobis id expedita dolores officiis layered dolor sit amet layered dolor sit amet"
+            }
+            introRequired={false}
+            subtitleRequired={true}
+            bgLineRequired={false}
+          />
+
+          <div className="grid grid-col-1 md:grid-cols-3 py-8 gap-8 md:gap-12">
+            <TestimonialCard />
+            <TestimonialCard />
+            <TestimonialCard />
+          </div>
+        </DivideY>
+        {/* TESTIMONIAL SECTION ends*/}
+        {/* SUBSCRIBE SECTION starts */}
+        <SubscribeNow />
+        {/* SUBSCRIBE SECTION starts */}
+
+        <Footer />
+      </main>
+    </>
+  );
 }
