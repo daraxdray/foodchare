@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "flowbite";
 import { RiHeart3Line } from "react-icons/ri";
 import { TbMinusVertical } from "react-icons/tb";
@@ -6,14 +6,24 @@ import CartIcon from "../../../Button/cartButton";
 import Image from "next/image";
 // IMAGES
 import logo from "/public/assets/images/logos/ujali-logo.png";
+import CartCard from "../../../Cards/CartCard";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen ] = useState(false);
+
+  const openCart = () => {
+    setIsOpen(true)
+  }
+  const closeCart = () => {
+    setIsOpen(false);
+  };
   return (
     <>
+    <CartCard isOpen={isOpen} onClose={closeCart} />
       <nav className="bg-primary-lightGreen">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" className="flex items-center ml-8">
-            <Image src={logo} alt="Ujali Foods" className="h-8 mr-2" />
+          <a href="/" className="flex items-center ml-8">
+            <Image src={logo} alt="Ujali Foods Logo" className="h-10 lg-mr-2" />
           </a>
           <div className="flex md:order-2">
             <button
@@ -40,8 +50,12 @@ export default function Navbar() {
             </button>
             <div className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
             >
+              <button 
+                    onClick={() =>{openCart()}}
+                    >
+                    <CartIcon itemCount={4} />
 
-              <CartIcon itemCount={4} />
+              </button>
             </div>
             <div className="relative hidden md:block">
               <form className="flex items-center">
@@ -83,6 +97,7 @@ export default function Navbar() {
                   </button>
                   <button
                     type="button"
+                    onClick={() =>{openCart()}}
                     className="absolute inset-y-0 right-0 flex items-center pr-4 text-primary-grey"
                   >
                     <CartIcon itemCount={3} size={20} />
