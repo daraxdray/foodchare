@@ -3,7 +3,7 @@ import HomePageHero from "../components/Hero/HomePageHero";
 import Footer from "../components/partials/footer/Footer";
 import Title from "../components/Typography/Title";
 import Navbar from "../components/partials/header/NavBar/index";
-import FoodCard from "../components/Cards/foodCard";
+import FoodCard from "../components/Cards/FoodCard";
 import TestimonialCard from "../components/Cards/TestimonialCard";
 import JoinUsCard from "../components/Cards/JoinUsCard";
 import SubscribeNow from "../components/Subscribe/SubscribeNow";
@@ -184,8 +184,10 @@ export default function Home() {
         <SubscribeNow />
         {/* SUBSCRIBE SECTION starts */}
 
-        <Footer />
       </main>
+      <div className="flex flex-col items-center justify-between bg-secondary-grey">
+        <Footer />
+      </div>
     </>
   );
 }

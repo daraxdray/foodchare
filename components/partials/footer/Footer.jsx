@@ -7,8 +7,8 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <footer>
-        <div className="grid grid-col-2 md:grid-cols-4 gap-2 md:gap-4 tracking-wide">
+      <footer className="container bg-secondary-grey lg-mt-20 p-5 items-center ">
+        <div className=" grid grid-col-2 md:grid-cols-4 gap-2 md:gap-4 tracking-wide">
           <div className="col-span-2 md:col-span-1 mb-4">
             <Image src={logo} className="mb-4"></Image>
             <p className="text-sm leading-6 tracking-wide">

@@ -12,6 +12,7 @@ module.exports = {
         'home-circle': "url('/assets/images/background/circle.png')",
         'title-line': "url('/assets/images/title/title-line.png')",
         'cta': "url('/assets/images/footer/CTA.png')",
+        "login": "url('/assets/images/background/login-image.png')",
       },
       colors: {
         white: "#ffffff",
@@ -39,7 +40,7 @@ module.exports = {
           orange: "#F3C6A6",
           green: "#084C04",
           blue: "#0F216F",
-          grey: "#F8F8F1"
+          grey: "#FAFAFF"
         }
       }
     },
