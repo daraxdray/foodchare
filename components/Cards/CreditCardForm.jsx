@@ -21,7 +21,7 @@ const CreditCardForm = () => {
                 <form action="" className="flex flex-col space-y-4">
                     <div>
                         <label htmlFor="holder" className="text-xs font-semibold text-gray-500">
-                        Card Holder's name
+                            Card Holder's name
                         </label>
                         <input
                             type="text"
@@ -35,16 +35,16 @@ const CreditCardForm = () => {
                         <label htmlFor="card-number" className="text-xs font-semibold text-gray-500">
                             Card number
                         </label>
+                        <BsFillCreditCard2BackFill
+                            className="absolute bottom-3 left-3 max-h-4"
+
+                        />
                         <input
                             type="text"
                             id="card-number"
                             name="card-number"
                             placeholder="1234-5678-XXXX-XXXX"
-                            className="block w-full rounded border-gray-300 bg-primary-lightGrey py-3 px-4 pr-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-primary-orange"
-                        />
-                        <BsFillCreditCard2BackFill
-                            className="absolute bottom-3 right-3 max-h-4"
-
+                            className="block w-full rounded bg-primary-lightGrey py-3 px-4 border-orange-200 pl-10 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-primary-orange"
                         />
                         {/* <img
                             src="/images/uQUFIfCYVYcLK0qVJF5Yw.png"
@@ -87,7 +87,7 @@ const CreditCardForm = () => {
                 </form>
                 <button
                     type="submit"
-                    className="mt-4 inline-flex w-full items-center justify-center rounded bg-primary-green py-2.5 px-4 text-base font-semibold tracking-wide text-white text-opacity-80 outline-none ring-offset-2 transition hover:text-opacity-100 focus:ring-2 focus:ring-primary-orange sm:text-lg"
+                    className="mt-4 inline-flex w-1/3 items-center justify-center rounded bg-primary-green py-2.5 px-4 text-base font-semibold tracking-wide text-white text-opacity-80 outline-none ring-offset-2 transition hover:text-opacity-100 focus:ring-2 focus:ring-primary-orange sm:text-lg"
                 >
                     Pay
                 </button>
