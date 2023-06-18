@@ -1,0 +1,52 @@
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import HoverHighlight from '../Effect/HoverEffect';
+
+import React from 'react';
+
+const ProductCategoryTitle = ({
+  title,
+}) => {
+  return (
+    <>
+      <div>
+        <div className="flex justify-between">
+          <div>
+            <h4
+              className={`font-bold text-1xl md:text-2xl mb-2 text-center md:mx-0 leading-normal md:items-center p-2
+                  : "bg-none"
+                }`}
+            >{title}
+            </h4>
+          </div>
+          <div className="flex justify-around bg-red">
+            <div className='mx-4'>See all</div>
+              <div class="flex justify-evenly">
+              <HoverHighlight>
+              <div className="bg-gray-200 rounded-full h-8 p-2">
+                <FaArrowLeft size={12} color="#6B7280" />
+              </div>
+                </HoverHighlight>
+              <HoverHighlight>
+              <div className="bg-gray-200 rounded-full h-8 p-2">
+                <FaArrowRight  size={12} color="#6B7280"/>
+              </div>
+                </HoverHighlight>
+            </div>
+          </div>
+        </div>
+
+
+      </div >
+    </>
+  );
+};
+
+export default ProductCategoryTitle;
+
+
+{/* <div className="flex justify-between">
+      <div>Child 1</div>
+      <div>Child 2</div>
+    </div> */}

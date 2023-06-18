@@ -44,3 +44,9 @@ const Title = ({
 };
 
 export default Title;
+
+
+{/* <div className="flex justify-between">
+      <div>Child 1</div>
+      <div>Child 2</div>
+    </div> */}
