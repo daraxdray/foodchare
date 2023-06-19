@@ -1,8 +1,5 @@
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import HoverHighlight from '../Effect/HoverEffect';
 
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import React from 'react';
 
 const ProductCategoryTitle = ({

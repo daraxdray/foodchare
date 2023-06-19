@@ -13,7 +13,7 @@
  **********************************************************************/
 
 import React from 'react';
-import Component7 from '../Component7/Component7';
+import Component7 from './OrderBox';
 import CardGridContainer from '../Layouts/GridContainer';
 import { FaCheck } from 'react-icons/fa';
 
