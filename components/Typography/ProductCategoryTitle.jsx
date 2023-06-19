@@ -20,19 +20,17 @@ const ProductCategoryTitle = ({
             >{title}
             </h4>
           </div>
-          <div className="flex justify-around bg-red">
+          <div className="flex justify-around">
             <div className='mx-4'>See all</div>
               <div class="flex justify-evenly">
-              <HoverHighlight>
-              <div className="bg-gray-200 rounded-full h-8 p-2">
+              
+              <div className="bg-gray-200 rounded-full hover:bg-primary-green transition-colors h-8 p-2">
                 <FaArrowLeft size={12} color="#6B7280" />
               </div>
-                </HoverHighlight>
-              <HoverHighlight>
-              <div className="bg-gray-200 rounded-full h-8 p-2">
+              <div className="bg-gray-200 rounded-full hover:bg-primary-green  transition-colors h-8 p-2">
                 <FaArrowRight  size={12} color="#6B7280"/>
               </div>
-                </HoverHighlight>
+              
             </div>
           </div>
         </div>

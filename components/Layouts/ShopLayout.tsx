@@ -19,7 +19,9 @@ const ShopLayout = ({ children }: CardGridContainerProps) => {
                     <MainContainer children={children} />
                 </div>
             </div>
+            <div className="flex flex-col items-center justify-between bg-secondary-grey">
             <Footer />
+            </div>
 
         </>
     );

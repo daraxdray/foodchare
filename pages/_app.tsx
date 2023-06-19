@@ -17,13 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
     const handleRouteChange = (url:string) => {
       setLoading(true)
-      console.log(url);
-      console.log(url);
-      console.log(url);
-      console.log(url);
-      console.log(url);
-      console.log(url);
-      console.log(url);
     }
 
     const handleRouteChangeComplete = () => {

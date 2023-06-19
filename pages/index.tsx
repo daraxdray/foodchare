@@ -86,9 +86,9 @@ export default function Home() {
             bgLineRequired={false}
           />
 
-          <div className="grid grid-col-1 md:grid-cols-4 gap-4">
+         
             <FoodCard />
-          </div>
+         
           <ButtonWithIconRight text="Explore our list" />
         </DivideY>
         {/* Our Most  Delicious Meal Ends */}
@@ -106,9 +106,9 @@ export default function Home() {
             bgLineRequired={false}
           />
 
-          <div className="grid grid-col-1 md:grid-cols-4 gap-4">
+          
             <FoodCard />
-          </div>
+          
           <ButtonWithIconRight text="Explore our service" />
         </DivideY>
         {/* Groceries To Your Door Ends */}
@@ -126,9 +126,9 @@ export default function Home() {
             bgLineRequired={false}
           />
 
-          <div className="grid grid-col-1 md:grid-cols-4 gap-4">
+          
             <FoodCard />
-          </div>
+          
           <ButtonWithIconRight text="Explore our service" />
         </DivideY>
         {/* Groceries To Your Door Ends */}
