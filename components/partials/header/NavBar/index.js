@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <>
     <CartCard isOpen={isOpen} onClose={closeCart} />
-      <nav className="sticky top-0 z-50 w-full bg-primary-lightGreen  ">
+      <nav className="sticky top-0 z-50 w-full bg-primary-lightGreenNoOpacity">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" className="flex items-center ml-8">
             <Image src={logo} alt="Ujali Foods Logo" className="h-10 lg-mr-2" />
@@ -218,7 +218,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/join-us"
                   className={`px-1 py-2 flex items-center md:text-md hover:text-base hover:border-b-0 md:hover:border-b-2 hover:border-primary-orange hover:text-primary-orange leading-snug hover:opacity-75`}
                   aria-current="page"
                 >
