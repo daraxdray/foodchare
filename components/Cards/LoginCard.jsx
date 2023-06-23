@@ -5,7 +5,7 @@ import FacebookIcon from "../../public/assets/images/icon/facebook.png";
 import GoogleIcon from "../../public/assets/images/icon/google1.png";
 import Image from "next/image";
 const LoginCard = () => {
-  const [notVerify, setNotVerify] = useState(true);
+  const [notVerify, setNotVerify] = useState(false);
   const [code, setCode] = useState(["", "", "", ""]);
   const inputRefs = useRef([]);
 
