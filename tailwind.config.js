@@ -33,10 +33,9 @@ module.exports = {
           grey: "#CCCCCC",
           lightGrey: "#F8F8FA",
           red: "#FF0000",
-          orange: "#FF6B00",
           lightGreen: "#1ACE0A0A",
           lightGreenNoOpacity: "#E4FFE1",
-          
+          lightGreenNoOpacity2: "#E4FFE1",
         },
         secondary: {
           orange: "#F3C6A6",

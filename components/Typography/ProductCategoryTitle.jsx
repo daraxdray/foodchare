@@ -21,7 +21,7 @@ const ProductCategoryTitle = ({
             <div className='mx-4'>See all</div>
               <div class="flex justify-evenly">
               
-              <div className="bg-gray-200 rounded-full hover:bg-primary-green transition-colors h-8 p-2">
+              <div className="bg-gray-200 rounded-full mr-2 hover:bg-primary-green transition-colors h-8 p-2">
                 <FaArrowLeft size={12} color="#6B7280" />
               </div>
               <div className="bg-gray-200 rounded-full hover:bg-primary-green  transition-colors h-8 p-2">

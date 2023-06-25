@@ -17,8 +17,8 @@ import DivideY from "../components/Divider/DivideY";
 import ButtonWithIconRight from "../components/Button/ButtonWithIconRight";
 import { FaRegHandshake } from "react-icons/fa";
 import { TbTruckDelivery } from "react-icons/tb";
-import ProductHeader from "@/components/Typography/ProductHeader";
 import ShopLayout from "@/components/Layouts/ShopLayout";
+import CardGridContainer from "@/components/Layouts/GridContainer";
 
 export default function Home() {
   return (
@@ -29,9 +29,9 @@ export default function Home() {
           <ProductCategoryTitle
             title="Frozen Food"
           />
-        
-            <FoodCard />
-        
+                    <FoodCard gridDouble={true} />
+
+       
         
         {/* Our Most  Delicious Meal Ends */}
         {/* Groceries To Your Door Starts */}
@@ -40,7 +40,7 @@ export default function Home() {
             title="Food Products"
           />
        
-            <FoodCard />
+            <FoodCard  />
        
          
         </DivideY>

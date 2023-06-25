@@ -23,20 +23,20 @@ const HomePageHero = () => {
           </p>
           <div className="mx-auto my-4 md:my-8">
             <form action="#">
-              <div className="items-center mx-auto max-w-screen-sm flex flex-row drop-shadow-2xl ">
-                <div className="relative w-full z-0">
+              <div className="items-center mx-auto max-w-screen-sm flex flex-row drop-shadow-2xl " style={{height:60}}>
+                <div className="relative w-full h-full  z-0">
                   <input
-                    className="block p-3 pl-10 w-full text-sm border border-primary-grey hover:border-primary-green focus:border-primary-orange rounded-lg sm:rounded-none sm:rounded-l-lg"
+                    className="block p-3 pl-10 w-full h-full text-sm border border-primary-grey hover:border-primary-green focus:border-primary-orange rounded-lg sm:rounded-none sm:rounded-l-lg"
                     placeholder="Enter delivery address"
                     type="text"
                     id="address"
                     required
                   />
                 </div>
-                <div className="z-10">
+                <div className="z-10 h-full">
                   <button
                     type="submit"
-                    className="-ml-2 py-3 px-4 md:px-12 w-full text-sm font-bold border border-white rounded-lg md:rounded-none md:rounded-r-lg text-white bg-primary-green cursor-pointer hover:bg-primary-orange"
+                    className="-ml-2 py-3 h-full px-4 md:px-12 w-full text-sm font-bold border border-white rounded-lg md:rounded-none md:rounded-r-lg text-white bg-primary-green cursor-pointer hover:bg-primary-orange"
                   >
                     Search
                   </button>

@@ -21,13 +21,13 @@ const Title = ({
           <></>
         )}
         <h2
-          className={`font-bold text-3xl md:text-5xl mb-2 text-center md:mx-0 leading-normal md:items-center p-2 ${
-            bgLineRequired === true
-              ? "bg-title-line bg-no-repeat bg-bottom"
-              : "bg-none"
-          }`}
+          className={`text-3xl md:text-5xl mb-2 text-center md:mx-0 leading-normal md:items-center p-2 `}
         >
-          {titleInitial} <span className="font-black">{titleEnding}</span>
+          {titleInitial} <span className={`font-black ${
+            bgLineRequired === true
+              ? "bg-title-line bg-no-repeat bg-bottom  "
+              : "bg-none"
+          }`}>{titleEnding}</span>
         </h2>
         {subtitleRequired === true ? (
           <>

@@ -30,7 +30,7 @@ const LoginCard = () => {
 
   return (
     <>
-      <div className="flex items-center lg-w-4/5 w-full mx-auto shadow-lg">
+      <div className="flex items-center w-4/5  mx-auto shadow-lg">
         <div className="flex-1   bg-white  ">
           <div className="  flex flex-col md:flex-row  ">
             <div className="flex items-center justify-center p-6 sm:p-12 md:w-3/5">

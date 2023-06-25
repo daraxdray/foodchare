@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import heroImage from "/public/assets/images/hero/home.png";
+import heroImage from "/public/assets/images/hero/partner.png";
 import HeroSlider from "../Slider/HeroSlider";
 
 const BeAPartnerHero = () => {
@@ -11,7 +11,7 @@ const BeAPartnerHero = () => {
           <span className="rounded-2xl bg-secondary-orange px-4 py-1 text-xs font-bold">
             Food is an adventure
           </span>
-          <h1 className="my-2 text-4xl md:text-7xl font-bold w-1/5 leading-relaxed md:leading-[96px]">
+          <h1 className=" text-4xl md:text-7xl font-bold w-1/5 leading-relaxed md:leading-[96px]">
             Grow your<br />
             Business<br /> with
             <span className="my-2 ml-2 text-4xl md:text-7xl font-bold leading-relaxed md:leading-[96px] text-primary-orange">

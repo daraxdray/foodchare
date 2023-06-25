@@ -10,7 +10,7 @@ import Image from "next/image";
 import SmallerText from "../Typography/SmallerText"
 
 
-const FoodCard = () => {
+const FoodCard = ({gridDouble = false}) => {
 
   const image = [
     {
@@ -32,7 +32,7 @@ const FoodCard = () => {
   ]
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className={`grid grid-cols-2 md:grid-cols-3 ${gridDouble? 'lg:grid-cols-2 gap-4':'lg:grid-cols-4  gap-4'}`}>
 
         {image.map((item, index) => (
           <div className="flex flex-col w-full bg-white drop-shadow-xl rounded-lg transform origin-top transition-transform hover:scale-105" key={index}>
@@ -67,31 +67,6 @@ const FoodCard = () => {
             </div>
           </div>
         ))}
-        {/* 
-<div className="w-64 bg-white rounded-lg shadow-md overflow-hidden">
-        <div className="relative">
-          <img src="/assets/images/food/food-1.png" alt="Card Image" className="w-full h-40 object-cover" />
-          <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-between">
-            <button className="p-2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full">
-              <FaHeart size={20} color="black" />
-            </button>
-            <div className="flex items-center p-2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full">
-              <FaStar size={16} color="yellow" />
-              <span className="ml-1 text-sm font-bold">4.5</span>
-            </div>
-          </div>
-        </div>
-        <div className="p-4">
-          <h3 className="text-lg font-semibold mb-2">Card Title</h3>
-          <p className="text-sm text-gray-600 mb-4">Card Description</p>
-          <div className="flex items-center justify-between">
-            <p className="text-lg font-bold">$24.99</p>
-            <button className="p-2 bg-primary-lightGreen hover:bg-primary-green text-white rounded-full">
-              <FaShoppingCart size={20} />
-            </button>
-          </div>
-        </div>
-      </div> */}
       </div>
     </>
   );

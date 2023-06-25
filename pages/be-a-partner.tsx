@@ -76,12 +76,12 @@ export default function Home() {
         {/* Our Most  Delicious Meal Ends */}
         {/* Groceries To Your Door Starts */}
         <DivideY>
-          <section className="flex flex-col items-center bg-primary-lightGreen w-screen py-15">
+          <section className="flex flex-col items-center bg-primary-lightGreen w-screen py-15 pt-20 pb-20">
             <h2 className="text-4xl text-primary-orange font-bold mb-4">Ready to be with us</h2>
             <p className="text-gray-700 text-lg mb-4">Get in touch with us.</p>
             <p className="text-green-500 mb-8">Leave your details below so we can talk about how being an Ujali Partner can add to your success.</p>
             <form className="w-full md:w-2/3 lg:w-1/2">
-              <div className="flex flex-wrap justify-between mb-4">
+              <div className="flex flex-wrap justify-evenly mb-4">
                 <div className="w-full md:w-1/2">
                   <label htmlFor="firstName" className="text-gray-800">First Name</label>
                   <input type="text" id="firstName" className="w-full border border-gray-300 rounded-lg p-2" />
