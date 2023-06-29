@@ -75,15 +75,15 @@ const LoginCard = () => {
                     </div>
                     <div>
                       <button
-                        class="bg-primary-green w-full mt-10 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="bg-primary-green w-full mt-10 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit"
                       >
                         Verify
                       </button>
                     </div>
 
-                    <div class="text-primary-orange mb-4 mt-10">
-                      <a href="#" class="underline">
+                    <div className="text-primary-orange mb-4 mt-10">
+                      <a href="#" className="underline">
                         Resend code
                       </a>
                     </div>

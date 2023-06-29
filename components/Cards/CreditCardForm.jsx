@@ -64,7 +64,7 @@ const CreditCardForm = () => {
                                     id="security-code"
                                     name="security-code"
                                     placeholder="08/23"
-                                    class="block w-36 rounded border-gray-300 bg-primary-lightGrey py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-primary-orange"
+                                    className="block w-36 rounded border-gray-300 bg-primary-lightGrey py-3 px-4 text-sm placeholder-gray-300 shadow-sm outline-none transition focus:ring-2 focus:ring-primary-orange"
                                     value={code}
                                     onChange={formatSecurityCode}
                                 />
