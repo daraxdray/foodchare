@@ -71,7 +71,7 @@ const HeroSlider = () => {
       {images.map((i, index) => (
         <div key={index}>
           {" "}
-          <Image src={i} alt={`Ujali Foods ${index}`} />
+          <Image src={i} alt={`foodchare Foods ${index}`} />
         </div>
       ))}
     </Slider>

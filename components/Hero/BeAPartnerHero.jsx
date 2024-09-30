@@ -15,12 +15,12 @@ const BeAPartnerHero = () => {
             Grow your<br />
             Business<br /> with
             <span className="my-2 ml-2 text-4xl md:text-7xl font-bold leading-relaxed md:leading-[96px] text-primary-orange">
-              UJALI
+              foodchare
             </span>
           </h1>
 
           <p className="font-medium text-md md:text-base text-primary-gray my-4 leading-[34px]">
-            Elevate your business with UJALI. Drive growth, streamline operations, and make informed decisions. Join our community for wider reach and increased profitability. Experience the power of UJALI and achieve success.
+            Elevate your business with foodchare. Drive growth, streamline operations, and make informed decisions. Join our community for wider reach and increased profitability. Experience the power of foodchare and achieve success.
           </p>
           <div className="mx-auto my-4 md:my-8">
             <div className="z-10">
@@ -35,7 +35,7 @@ const BeAPartnerHero = () => {
         </div>
         <div className="bg-home-circle bg-no-repeat bg-left-bottom">
           {/* <HeroSlider /> */}
-          <Image src={heroImage} alt="Ujali Foods" />
+          <Image src={heroImage} alt="foodchare Foods" />
         </div>
       </div>
     </>

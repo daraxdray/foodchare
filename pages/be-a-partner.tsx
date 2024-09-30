@@ -44,7 +44,7 @@ export default function Home() {
               <div className="absolute top-0 left-0 mt-8 ml-8">
                 <h2 className="text-4xl font-bold text-white">
                   How can
-                  <span className="text-4xl font-bold text-primary-orange"> UJALI</span> <br />
+                  <span className="text-4xl font-bold text-primary-orange"> foodchare</span> <br />
                   help you?</h2>
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
@@ -67,10 +67,10 @@ export default function Home() {
         {/* Our Most  Delicious Meal Starts */}
         <DivideY>
           <h2 className={`font-bold text-3xl md:text-5xl mb-2 text-center md:mx-0 leading-normal md:items-center p-2 ${"bg-no-repeat bg-bottom"}`}>
-            Why trust <span className="text-primary-orange">Ujali</span>
+            Why trust <span className="text-primary-orange">foodchare</span>
           </h2>
           <p className="leading-5 md:leading-loose font-normal text-center text-primary-black text-xs md:text-lg mx-8 md:mx-12 mb-8">
-            Ujali is a trusted partner because we prioritize transparency, reliability, and exceptional service. With a proven track record and a commitment to exceeding expectations, we have earned the trust of our clients. Our dedicated team works tirelessly to deliver innovative solutions, ensuring that your business receives the utmost care and attention. Choose Ujali for a reliable and trustworthy partnership that will help your business thrive.
+            foodchare is a trusted partner because we prioritize transparency, reliability, and exceptional service. With a proven track record and a commitment to exceeding expectations, we have earned the trust of our clients. Our dedicated team works tirelessly to deliver innovative solutions, ensuring that your business receives the utmost care and attention. Choose foodchare for a reliable and trustworthy partnership that will help your business thrive.
           </p>
         </DivideY>
         {/* Our Most  Delicious Meal Ends */}
@@ -79,7 +79,7 @@ export default function Home() {
           <section className="flex flex-col items-center bg-primary-lightGreen w-screen py-15 pt-20 pb-20">
             <h2 className="text-4xl text-primary-orange font-bold mb-4">Ready to be with us</h2>
             <p className="text-gray-700 text-lg mb-4">Get in touch with us.</p>
-            <p className="text-green-500 mb-8">Leave your details below so we can talk about how being an Ujali Partner can add to your success.</p>
+            <p className="text-green-500 mb-8">Leave your details below so we can talk about how being an foodchare Partner can add to your success.</p>
             <form className="md:w-2/3 lg:w-1/2">
               <div className="flex flex-wrap justify-between mb-4">
                 <div className="w-full md:w-1/2">

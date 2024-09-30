@@ -167,8 +167,8 @@ const SideNavigation = () => {
         ],)];
 
 
-    const ujaliFood: Array<NavigationProp> = [
-        getItem(<h4 className="text-lg font-bold uppercase font-bold">From Ujali Food</h4>, 'sort', undefined, [
+    const foodchareFood: Array<NavigationProp> = [
+        getItem(<h4 className="text-lg font-bold uppercase font-bold">From foodchare Food</h4>, 'sort', undefined, [
             getItem(<div className="flex justify-between items-center">
                 <span className="flex mr-2 items-center">
                     <FaAward size={20} />
@@ -284,7 +284,7 @@ const SideNavigation = () => {
                     </div>
                     <div className='mb-20'>
                         <ul className="space-y-2 font-medium">
-                            {Array.isArray(ujaliFood) && ujaliFood.map((parent) => {
+                            {Array.isArray(foodchareFood) && foodchareFood.map((parent) => {
 
                                 return (
                                     parent?.children != null && Array.isArray(parent.children) ?

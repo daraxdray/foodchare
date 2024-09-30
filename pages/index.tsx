@@ -42,7 +42,7 @@ export default function Home() {
             titleInitial="How it"
             titleEnding="works"
             subtitle={
-              "Know how are platform woks for a seamless order and delivery process"
+              "Know how are platform woks for a seamless food sharing process"
             }
             introRequired={true}
             subtitleRequired={true}
@@ -52,28 +52,28 @@ export default function Home() {
           <div className="grid grid-col-1 md:grid-cols-3 md:px-12  gap-4 md:gap-8">
             <HowItWorks
               headerImg={howItWork1}
-              title={"Food"}
+              title={"Download App"}
               description={
-                "Place an order by selecting your meal from our website"
+                "Deposit your surplus food by downloading our app"
               }
             />
             <HowItWorks
               headerImg={howItWork2}
-              title={"Groceries"}
+              title={"Locate FoodBank"}
               description={
-                "Place an order by selecting your groceries from our website"
+                "Locate nearest food bank for deposit or pickup"
               }
             />
             <HowItWorks
               headerImg={howItWork3}
               title={"Food Supply"}
-              description={"Place an order for food supply from our website"}
+              description={"Easily identify your food choice from avaliable list in the closest food bank"}
             />
           </div>
         </DivideY>
         {/* HOW IT WORKS SECTION ENDS */}
         {/* Our Most  Delicious Meal Starts */}
-        <DivideY>
+        {/* <DivideY>
           <Title
             intro="Our Favorite Restaurants"
             titleInitial="Our Most"
@@ -90,10 +90,10 @@ export default function Home() {
             <FoodCard />
          
           <ButtonWithIconRight text="Explore our list" />
-        </DivideY>
+        </DivideY> */}
         {/* Our Most  Delicious Meal Ends */}
         {/* Groceries To Your Door Starts */}
-        <DivideY>
+        {/* <DivideY>
           <Title
             intro="Making shooping easier"
             titleInitial="Groceries"
@@ -110,10 +110,10 @@ export default function Home() {
             <FoodCard />
           
           <ButtonWithIconRight text="Explore our service" />
-        </DivideY>
+        </DivideY> */}
         {/* Groceries To Your Door Ends */}
         {/* Groceries To Your Door Starts */}
-        <DivideY>
+        {/* <DivideY>
           <Title
             intro="Our Specials Deals"
             titleInitial="The Best"
@@ -130,14 +130,14 @@ export default function Home() {
             <FoodCard />
           
           <ButtonWithIconRight text="Explore our service" />
-        </DivideY>
+        </DivideY> */}
         {/* Groceries To Your Door Ends */}
         {/* JoinUs SECTION starts */}
-        <DivideY>
+        {/* <DivideY>
           <Title
             intro=""
             titleInitial="Be A Part Of"
-            titleEnding="Ujali"
+            titleEnding="foodchare"
             subtitle={
               "Fully nobis id expedita dolores officiis layered dolor sit amet layered dolor sit amet"
             }
@@ -157,10 +157,10 @@ export default function Home() {
               IconName={TbTruckDelivery}
             />
           </div>
-        </DivideY>
+        </DivideY> */}
         {/* JoinUs SECTION ends*/}
         {/* TESTIMONIAL SECTION starts */}
-        <DivideY>
+        {/* <DivideY>
           <Title
             intro=""
             titleInitial="Reviews"
@@ -178,7 +178,7 @@ export default function Home() {
             <TestimonialCard />
             <TestimonialCard />
           </div>
-        </DivideY>
+        </DivideY> */}
         {/* TESTIMONIAL SECTION ends*/}
         {/* SUBSCRIBE SECTION starts */}
         <SubscribeNow />

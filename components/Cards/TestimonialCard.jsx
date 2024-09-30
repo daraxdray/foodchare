@@ -24,7 +24,7 @@ const TestimonialCard = () => {
             {" "}
             <Image
               src={Testimonial1}
-              alt="Ujali Foods"
+              alt="foodchare Foods"
               className="h-11 w-11 flex-shrink-0 rounded-full object-cover"
             />
             <div className="ml-4">

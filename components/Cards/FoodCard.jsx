@@ -37,7 +37,7 @@ const FoodCard = ({gridDouble = false}) => {
         {image.map((item, index) => (
           <div className="flex flex-col w-full bg-white drop-shadow-xl rounded-lg transform origin-top transition-transform hover:scale-105" key={index}>
             <div className="relative">
-              <Image src={item.image} alt="ujali" className="w-full h-40 object-cover rounded-t-xl h-48" />
+              <Image src={item.image} alt="foodchare" className="w-full h-40 object-cover rounded-t-xl h-48" />
               <div className="absolute top-0 left-0 right-0 flex items-start justify-between p-2">
                 <button className="p-2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full">
                   <FaHeart size={20} color="black" />

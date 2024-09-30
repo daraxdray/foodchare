@@ -35,7 +35,7 @@ const LoginCard = () => {
           <div className="  flex flex-col md:flex-row  ">
             <div className="flex items-center justify-center p-6 sm:p-12 md:w-3/5">
               {/* <div className="float-left w-full lg:-mt-10 text-xs">
-                <img className="p-6 " src={Logo} alt="Ujali Logo" />
+                <img className="p-6 " src={Logo} alt="foodchare Logo" />
             </div> */}
               <div className="lg:w-4/5 md:w-4/5 sm:w-full">
                 <h1 className="mb-4 text-2xl font-bold ">

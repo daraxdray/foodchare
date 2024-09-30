@@ -6,7 +6,7 @@ import CartIcon from "../../../Button/cartButton";
 import Image from "next/image";
 import { useRouter } from 'next/router';
 // IMAGES
-import logo from "/public/assets/images/logos/ujali-logo.png";
+import logo from "/public/assets/images/logos/foodchare-logo.png";
 import CartCard from "../../../Cards/CartCard";
 
 export default function Navbar() {
@@ -28,7 +28,7 @@ export default function Navbar() {
       <nav className="sticky top-0 z-50 w-full bg-white">
         <div className="flex flex-wrp items-center justify-between mx-12 p-4">
           <a href="/" className="flex items-start">
-            <Image src={logo} alt="Ujali Foods Logo" className="h-10 lg-mr-2" />
+            <Image src={logo} alt="FoodChare Foods Logo" className="h-10 lg-mr-2" style={{width:'100%'}}/>
           </a>
        
           <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
@@ -89,7 +89,7 @@ export default function Navbar() {
                   Home
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="/tracking"
                   className={`px-1  py-2 flex items-center ${isActiveRoute('/tracking')? 'text-primary-orange font-bold':''} hover:font-bold md:text-md hover:text-base hover:border-b-0 md:hover:border-b-2 hover:border-primary-orange hover:text-primary-orange leading-snug hover:opacity-75`}
@@ -97,28 +97,28 @@ export default function Navbar() {
                 >
                   Track Order
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="/food-category"
+                  href="#"
                   className={`${isActiveRoute('/food-category')? 'text-primary-orange font-bold':''} px-1  py-2 flex items-center hover:font-bold md:text-md hover:text-base hover:border-b-0 md:hover:border-b-2 hover:border-primary-orange hover:text-primary-orange leading-snug hover:opacity-75`}
                   aria-current="page"
                 >
-                  Groceries
+                  About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="/be-a-partner"
+                  href="#"
                   className={`${isActiveRoute('/ba-a-partner')? 'text-primary-orange font-bold':''} px-1 py-2 flex items-center hover:font-bold  md:text-md hover:text-base hover:border-b-0 md:hover:border-b-2 hover:border-primary-orange hover:text-primary-orange leading-snug hover:opacity-75`}
                   aria-current="page"
                 >
-                  Distribution
+                  Be A Partner
                 </a>
               </li>
               <li>
                 <a
-                  href="/join-us"
+                  href="#"
                   className={`${isActiveRoute('/join-us')? 'text-primary-orange font-bold':''} px-1 py-2 flex items-center hover:font-bold md:text-md hover:text-base hover:border-b-0 md:hover:border-b-2 hover:border-primary-orange hover:text-primary-orange leading-snug hover:opacity-75`}
                   aria-current="page"
                 >
