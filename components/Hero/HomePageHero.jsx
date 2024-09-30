@@ -47,7 +47,7 @@ const HomePageHero = () => {
         </div>
         <div className="bg-home-circle bg-no-repeat bg-left-bottom">
           {/* <HeroSlider /> */}
-          <Image src={heroImage} alt="Food Foods" style={{width:'150%', height:'90%'}} />
+          <Image src={heroImage} alt="Food Foods" style={{width:'100%', }} />
         </div>
       </div>
     </>
