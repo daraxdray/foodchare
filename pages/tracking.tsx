@@ -17,7 +17,7 @@ import DivideY from "../components/Divider/DivideY";
 import ButtonWithIconRight from "../components/Button/ButtonWithIconRight";
 import { FaRegHandshake } from "react-icons/fa";
 import { TbTruckDelivery } from "react-icons/tb";
-import ProductHeader from "@/components/Typography/ProductHeader";
+// import ProductHeader from "@/components/Typography/ProductHeader";
 import Tracking from "@/components/Tracking/Tracking";
 import ShopLayout from "@/components/Layouts/ShopLayout";
 
